@@ -1,0 +1,221 @@
+/* general settings */
+
+body {
+    font-size: 14pt;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+p {
+    margin: .5em 0em;
+}
+
+code, pre {
+    font-family: Inconsolata;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* index page */
+
+#index {
+    max-width: 40em;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.8em;
+}
+
+#index ul {
+    list-style-type: none;
+}
+
+/* buttons at top */
+
+#buttons {
+    text-align: left;
+    max-width: 40em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#top-buttons {
+    padding-top: .5em;
+    text-align: center;
+}
+
+
+#button-reveal-all {
+    opacity: 0.4;
+}
+
+/* row */
+
+.row {
+    border-top: .5pt solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 40em;
+    opacity: 0.05;
+    position: relative;
+}
+
+#buttons-under {
+    width: 100%;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+#buttons-under button {
+    visibility: hidden;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin-right: .1em;
+    margin-top: .2em;
+}
+
+#buttons-under button.learned-something {
+    margin-right: 1em;
+}
+
+.star {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.star.learned {
+    color: yellow;
+}
+
+.row.question-revealed #buttons-under button {
+    visibility: visible;
+}
+
+.row.done.question-revealed #buttons-under .next-question {
+    visibility: hidden;
+}
+
+.all-revealed #buttons-under button.learned-something {
+    visibility: visible;
+}
+
+.all-revealed .row.question-revealed #buttons-under button.next-question {
+    visibility: hidden;
+}
+
+button {
+    background-color: darkblue;
+    border-radius: 5px;
+    padding: .3em .7em; 
+    color: white;
+    font-size: 1em;
+    border: none;
+}
+
+.row.revealed, .all-revealed .row {
+    opacity: 1;
+}
+
+.chapter + .row {
+    border-top: 0px;
+}
+
+/* question/answer divs */
+
+.question, .answer {
+    max-width: 18em;
+    width: 100%;
+    margin: .5em;
+    padding: .5em;
+    min-width: 10em;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.answer {
+    position: relative;
+    border-radius: 10px;
+    background-color: #f1f1f8;
+}
+
+.answer::before {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: .2em;
+    left: .2em;
+    bottom: .2em;
+    right: .2em;
+    content: '';
+    background-color: darkblue;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.answer.revealed::before, .all-revealed .answer::before {
+    top: 100%;
+    left: .2em;
+    bottom: .2em;
+    right: .2em;
+}
+
+.answer::after {
+    content: 'reveal';
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 1.5em;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.answer.revealed::after , .all-revealed .answer::after{
+    display: none;
+}
+
+.question h3, .answer h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0em;
+}
+
+ol, ul {
+    margin: 0 0 0 2em;
+    padding: 0;
+}
+
+/* tables */
+
+table.ip {
+    font-family: Inconsolata;
+}
+
+td {
+    border: .5pt solid black;
+    padding: .2em .5em;
+    margin: 0;
+}
+
+
+
+/* headers */
+
+h1 {
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5 {
+	font-weight: bold;
+}
+
