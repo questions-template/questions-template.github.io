@@ -1,5 +1,10 @@
 /* general settings */
 
+:root {
+    --primary-color: darkblue;
+    --answer-bkg-color: #f1f1f8;
+}
+
 body {
     font-size: 14pt;
     color: black;
@@ -111,9 +116,9 @@ pre {
 }
 
 button {
-    background-color: darkblue;
+    background-color: var(--primary-color);
     border-radius: 5px;
-    padding: .3em .7em; 
+    padding: .3em .7em;
     color: white;
     font-size: 1em;
     border: none;
@@ -142,7 +147,7 @@ button {
 .answer {
     position: relative;
     border-radius: 10px;
-    background-color: #f1f1f8;
+    background-color: var(--answer-bkg-color);
 }
 
 .answer::before {
@@ -154,7 +159,7 @@ button {
     bottom: .2em;
     right: .2em;
     content: '';
-    background-color: darkblue;
+    background-color: var(--primary-color);
     border-radius: 10px;
     transition: all 0.5s ease-out;
 }
@@ -218,4 +223,3 @@ h1 {
 h1,h2,h3,h4,h5 {
 	font-weight: bold;
 }
-
