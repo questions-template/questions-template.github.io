@@ -72,13 +72,13 @@ pre {
     position: relative;
 }
 
-#buttons-under {
+.buttons-under {
     width: 100%;
     text-align: right;
     padding-bottom: 1em;
 }
 
-#buttons-under button {
+.buttons-under button {
     visibility: hidden;
     font-size: 0.9em;
     line-height: 1.8em;
@@ -86,7 +86,7 @@ pre {
     margin-top: .2em;
 }
 
-#buttons-under button.learned-something {
+.buttons-under button.learned-something {
     margin-right: 1em;
 }
 
@@ -99,19 +99,19 @@ pre {
     color: yellow;
 }
 
-.row.question-revealed #buttons-under button {
+.row.question-revealed .buttons-under button {
     visibility: visible;
 }
 
-.row.done.question-revealed #buttons-under .next-question {
+.row.done.question-revealed .buttons-under .next-question {
     visibility: hidden;
 }
 
-.all-revealed #buttons-under button.learned-something {
+.all-revealed .buttons-under button.learned-something {
     visibility: visible;
 }
 
-.all-revealed .row.question-revealed #buttons-under button.next-question {
+.all-revealed .row.question-revealed .buttons-under button.next-question {
     visibility: hidden;
 }
 
