@@ -5,7 +5,7 @@ function start() {
     /* add "next question" button to each row except the last row*/
     for (row of app.rows) {
         var div = document.createElement("div");
-        div.id = "buttons-under"
+        div.className = "buttons-under"
         let next_question = `<button class="next-question"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.5em" height="1.5em" style="vertical-align: -0.375em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);margin: 0 0 0 -.3em;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M16.707 13.293a.999.999 0 0 0-1.414 0L13 15.586V8a1 1 0 1 0-2 0v7.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414L12 19.414l4.707-4.707a.999.999 0 0 0 0-1.414z" fill="white"></path></svg>next question</button>`
         let learned_something = ` <button class="learned-something">I learned something! <span class="star">★</span></button>`
         if (row === app.rows[app.rows.length-1]) {
