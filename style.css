@@ -78,6 +78,7 @@ pre {
     width: 100%;
     text-align: right;
     padding-bottom: 1em;
+    margin-right: 1em;
 }
 
 .buttons-under button {
@@ -86,10 +87,6 @@ pre {
     line-height: 1.8em;
     margin-right: .1em;
     margin-top: .2em;
-}
-
-.buttons-under button.learned-something {
-    margin-right: 1em;
 }
 
 .star {
