@@ -123,6 +123,10 @@ button {
     border: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button:focus {
     outline: var(--color-accent) solid 2px;
     outline-offset: 2px;
