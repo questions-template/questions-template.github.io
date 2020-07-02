@@ -1,17 +1,21 @@
 /* general settings */
 
 :root {
-    --primary-color: darkblue;
-    --answer-bkg-color: #f1f1f8;
+    --primary-color: #003366;   /* dark blue*/
+    --secondary-color: #f1f1f8; /* ghost white*/
+    --color-accent: #48a9a6;    /* verdigris */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-star: #f7c331;      /* saffron yellow*/
 }
 
 body {
     font-size: 14pt;
-    color: black;
+    color: var(--color-black);
 }
 
 a {
-    color: black;
+    color: var(--color-black);
 }
 
 p {
@@ -49,12 +53,10 @@ pre {
     margin: 0 auto;
 }
 
-
 #top-buttons {
     padding-top: .5em;
     text-align: center;
 }
-
 
 #button-reveal-all {
     opacity: 0.4;
@@ -63,7 +65,7 @@ pre {
 /* row */
 
 .row {
-    border-top: .5pt solid black;
+    border-top: .5pt solid var(--color-black);
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -96,7 +98,7 @@ pre {
 }
 
 .star.learned {
-    color: yellow;
+    color: var(--color-star);
 }
 
 .row.question-revealed .buttons-under button {
@@ -119,7 +121,7 @@ button {
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: .3em .7em;
-    color: white;
+    color: var(--color-white);
     font-size: 1em;
     border: none;
 }
@@ -141,13 +143,13 @@ button {
     padding: .5em;
     min-width: 10em;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--color-white);
 }
 
 .answer {
     position: relative;
     border-radius: 10px;
-    background-color: var(--answer-bkg-color);
+    background-color: var(--secondary-color);
 }
 
 .answer::before {
@@ -175,7 +177,7 @@ button {
     content: 'reveal';
     text-align: center;
     font-family: sans-serif;
-    color: white;
+    color: var(--color-white);
     position: absolute;
     font-size: 1.5em;
     top: 40%;
@@ -207,12 +209,10 @@ table.ip {
 }
 
 td {
-    border: .5pt solid black;
+    border: .5pt solid var(--color-black);
     padding: .2em .5em;
     margin: 0;
 }
-
-
 
 /* headers */
 
