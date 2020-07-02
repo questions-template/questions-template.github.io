@@ -126,6 +126,11 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: var(--color-accent) solid 2px;
+    outline-offset: 2px;
+}
+
 .row.revealed, .all-revealed .row {
     opacity: 1;
 }
